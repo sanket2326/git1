@@ -1,2 +1,571 @@
 heloo
 welconme
+C:\tools\Startrex.bat
+    Starting point for the build. Calls the main rexx script.
+
+c:\tools\pcom_bld.rex
+    The main rexx script. Parses the input arguments and calls other scripts.
+    COPY_CODE: label copies source code from D:\extract to D:\cmvc.
+
+e:\cmds\CopyWorkArea.bat
+    Copies source code from E:\CC_WorkArea\KEPI_GIT_PCOMM_14.0.0.0\pcomm to D:\extract\n70gm.
+    Deletes .db files.
+
+e:\cmds\bld_st.cmd
+    Copies files from D:\cmvc to build area (prod_int, buildbat, etc.).
+    Logs to E:\bld_st.log.
+
+e:\cmds\dropfunc.rex
+    ? (does not exist)
+
+e:\cmds\newbld.bat
+    Deletes some files from the build area.
+
+e:\cmds\set_env.cmd
+    Sets env vars for the build.
+
+E:\buildbat\build.bat
+    Sets the LANG and whichbld variable and then calls its child bat script.
+
+E:\buildbat\startbld.bat
+    
+
+E:\buildbat\blenvset.bat
+    Sets bld_alias env var and sets the temp directories.
+
+E:\buildbat\blcpyset.bat
+    Runs some xcopy commands and nsync commands.
+    Also copies files depending on the %lang% env var.
+
+E:\buildbat\runbuild.bat (type 1)
+    In Type 1 runbuild.bat is called without any argument.
+    Sets some env vars.
+    Calls its child scripts / rexx scripts.
+
+E:\BUILD\pcsver\gendtH.rex
+    Generates file versioning header file.
+
+E:\BUILD\cmmouse\cmmouse.bat
+    Sets some env vars and calls some nmake command to build CMMouse.
+
+E:\buildbat\makecmp.bat
+    Builds header files using the makent command.
+    Logs to E:\BUILD\build.log.
+
+E:\BUILD\skit\skit.bat
+    Does some validation, sets some env vars and then calls its child bat script.
+
+E:\BUILD\skit\ikmhelp\ikmhelp.bat
+    Runs the "nmake ikmhelp.mak" command.
+
+E:\BUILD\pcsdb\pcsdbout.bat
+    Compiles the pcsdbout.dll and .lib files using nmake command.
+
+E:\BUILD\pcsdb\pcsdb.bat
+    Compiles the PCSDB.EXE file using nmake command.
+
+E:\BUILD\pcshbw32\pcshbw32.bat
+    Sets some env vars, calls its child bat script and finally unsets the env vars set by it.
+
+E:\BUILD\pcshbw32\pcsdehli.bat
+    Generates PCSDEHLI.EXE using the nmake command.
+
+E:\buildbat\blenv16.bat
+    Sets some env vars.
+
+E:\buildbat\make16.bat
+    Uses the nmake command to compile DLL/LIB files and copies them to the E:\BUILD\prod folder.
+
+E:\buildbat\runbuild.bat (type 2)
+    In Type 2 runbuild.bat is called with one argument - the language name.
+
+E:\buildbat\makenreg.bat
+    Runs the makent command to compile %LANG%MGRES.DLL files and .chm files.
+
+E:\cmds\CK_EMUL.cmd
+    (as per comments) Checks for presence of emulator files.
+
+E:\buildbat\release.bat
+    Copies built files from E: drive to D: drive.
+
+E:\cmds\bld_jpn.rex
+    Calls the runbuild JPN command and checks for the JPN emulator files.
+
+E:\prod_int\build_pi.bat
+    Sets env vars related to product integration build and calls its child scripts.
+    Calls some nmake commands (pdlc.mak, pdlcnt.mak, pcsflr.mak).
+
+E:\prod_int\common\ActiveX\PCOMMSession\BuildActiveX.bat
+    Calls vcbuild.exe to compile PCOMMSession.vcproj to generate pcsctrX.ocx file.
+
+E:\prod_int\config\nodeinit\showver.bat
+    Runs an nmake command to generate SHOW_VER.EXE.
+
+E:\prod_int\ras\message\vdibmlog.bat
+    Runs an nmake command to generate VDIBMLOG.
+
+E:\prod_int\config\nodeinit\millutil.bat
+    Runs two nmake commands to generate MILLUTIL - one is timebomb version, another is non-timebomb version.
+
+E:\prod_int\config\nodeinit\strtwt.bat
+    Runs an nmake command to generate STRTWAIT.EXE.
+
+E:\prod_int\ras\trace\builditf.bat
+    Sets some env vars and calls its child scripts.
+
+E:\prod_int\ras\trace\nstrc\nstrc.bat
+    Runs an nmake command to generate nstrc.dll.
+
+E:\prod_int\ras\trace\nstrcnt\nstrcnt.bat
+    Runs the build -cef command to generate nstrcnt.sys.
+
+E:\prod_int\ras\trace\trcboot\trcboot.bat
+    Uses nmake command to (attempt to?) build trcboot.exe.
+
+E:\prod_int\ras\trace\fmt_util\fmt_util.bat
+    Uses the nmake command to build fmt_util.dll.
+
+E:\prod_int\ras\trace\fmteng\fmteng.bat
+    Uses the nmake command to generate fmteng.dll.
+
+E:\prod_int\ras\trace\pcsfmtpi\pcsfmtpi.bat
+    Uses the nmake command to build pcsfmtpi.dll.
+
+E:\prod_int\ras\trace\trcmsg\trcmsg.bat
+    Generates trcmsg.dll for all languages using nmake.
+
+E:\prod_int\tools\setrcopt.bat
+    Sets env vars for a particular language passed as argument.
+
+E:\prod_int\ras\trace\trcgui\pctrcmri\pctrcmri.bat
+    Generates pctrc<language>.dll for all languages using nmake command.
+
+E:\prod_int\ras\trace\trcgui\trcgui.bat
+    Generates trcgui.exe for all languages using nmake command.
+
+E:\prod_int\ras\trace\cstrace\cstrace.bat
+    Calls its child script in a loop for all languages.
+    Generates cstrace.exe using an nmake command.
+
+E:\prod_int\ras\trace\cstrace\cstrcmri\cstrcmri.bat
+    Generates the cstrc%pi_lang%.dll file as per the argument using an nmake command.
+
+E:\prod_int\ras\trace\cstrace\cstrcsrv\cstrcsrv.bat
+    Generates cstrcsrv.exe using an nmake command.
+
+E:\prod_int\ras\trace\snaformat\snaformat.bat
+    Generates the snaformat.exe using an nmake command.
+
+E:\prod_int\common\pcsmls\pcsmls.bat
+    Generates pcsmls.dll using nmake command.
+
+E:\prod_int\ras\message\klognt\klognt.bat
+    Generates the KLOGNT.SYS file using nmake command.
+
+E:\prod_int\ras\message\msgio\msgio.bat
+    Generates the msgio.dll file using nmake command.
+
+E:\prod_int\common\pcsw32x\pcsw32x.bat
+    Generates the pcsw32x.dll file using nmake command.
+
+E:\prod_int\ras\message\message.bat
+    Calls its child script in a loop for all languages.
+    Generates the message.dll file using nmake.
+
+E:\prod_int\ras\message\msgmsg\msgmsg.bat
+    Generates the MSGMSG.DLL for the langguage passed as argument.
+
+E:\prod_int\pcssh\pcssh.bat
+    Calls its child script in a loop for all languages.
+    Generates the pcssh.dll file using nmake command.
+
+E:\prod_int\pcssh\pcsshmsg\pcsshmsg.bat
+    Creates PCSSHMSG.DLL for the langguage passed as argument.
+
+E:\prod_int\cpic\makecpic.bat
+    Calls its child script in a loop for all languages.
+    Generates the wcpic32.dll using nmake command.
+
+E:\prod_int\cpic\cpicmsg.bat
+    Creates the cpicmsg.dll and .chm file for the language passed as argument.
+
+E:\prod_int\cpic\mwincpic.bat
+    Creates the wincpic.dll file using an nmake command.
+
+E:\prod_int\pcsgrvt\makegrvt.bat
+    Creates the pcsgrvt.dll for ENU, CHS, CHT and KOR languages using nmake commands.
+
+E:\prod_int\common\pcsmfcx\pcsmfcx.bat
+    Calls its child script pcmfcmri.bat in a loop for all the languages.
+    Generates the pcsmfcx.dll file using nmake.
+
+E:\prod_int\common\pcsmfcx\help\mfcxhelp.bat
+    Creates pcsmfcx.hlp using nmake.
+
+E:\prod_int\common\pcsmfcx\pcmfcmri\pcmfcmri.bat
+    Generates pcmfc%pi_lang%.dll file using nmake for the language passed as argument.
+
+E:\prod_int\ras\service\bundler\pcspdmri\pcspdmri.bat
+    Calls itself in a loop with each language as argument.
+    Generates PCSPDMRI.dll for each language passed as argument.
+
+E:\prod_int\ras\service\bundler\bundler.bat
+    Builds bundler.exe using the nmake and mt commands.
+
+E:\prod_int\ras\service\iserv\iservmri\iservmri.bat
+    Calls itself with each language passed as argument.
+    Builds the iserv<language>.dll files using nmake.
+
+E:\prod_int\ras\service\iserv\iserv.bat
+    Calls itself in a loop with each language as argument.
+    Builds the iserv.exe file using nmake.
+
+E:\prod_int\ras\service\pcsapar\pcsapar.bat
+    Calls itself with each language passed as argument.
+    Builds pcsapar.exe using nmake. Also builds pcsap%pi_lang%.hlp, pcsap%pi_lang%.cnt using E:\prod_int\tools\STRTWAIT.EXE.
+
+E:\prod_int\ras\service\pcsapard\pcsapard.bat
+    Calls its child script.
+    Calls the Compile.exe and isbuild.exe to create the pcsapard.exe file.
+
+E:\prod_int\ras\service\pcsapard\sendpcsaparmessage\sendpcsaparmessage.bat
+    Builds the sendpcsaparmessage.dll using nmake.
+
+E:\prod_int\pcomstr\pcomstr.bat
+    Calls itself with each language passed as argument.
+    Builds pcstr%pcomstr_lang%.dll for each language passed as argument using nmake.
+
+E:\prod_int\pcomstrt\pcomstrt.bat
+    Builds the pcomstsrt.exe file using nmake and mt.
+
+E:\prod_int\pcomstop\pcomstop.bat
+    Builds the pcomstop.exe file using nmake and mt.
+
+E:\prod_int\pcomqry\pcomqry.bat
+    Builds the pcomqry.exe file using nmake and mt.
+
+E:\prod_int\ras\message\msgbrwsr\msgbrwsr.bat
+    Calls its child script pclvwmri.bat in loop.
+    Builds the msgbrwsr.exe using nmake and mt.
+
+E:\prod_int\ras\message\msgbrwsr\pclvwmri\pclvwmri.bat
+    Builds the pclvw%pi_lang%.dll for each language set as env var.
+
+E:\BUILD\pcsdbhlp\pcsdbhlp.bat
+    Echoes the strtwait command but does not do anything.
+
+E:\BUILD\pcsdbhlp\pcsodbc.bat
+    ? (does not exist)
+
+E:\BUILD\pcsdb\pcsdbmri.bat
+    Calls itself with each language passed as argument.
+    Builds the pcsdb%lang%.dll for each language using nmake.
+
+E:\prod_int\common\pcswssts\pcswssts.bat
+    Builds the pcswssts.dll using nmake.
+
+E:\prod_int\common\pcswdlgc\pcswdlgc.bat
+    Builds the pcswdlgc.dll using nmake.
+
+E:\prod_int\common\pcsdlg1\pcsdlg1.bat
+    Builds the pcsdlg1.dll using nmake.
+
+E:\BUILD\pcscdra\pcscdra.bat
+    Builds the pcscdra.dll using nmake.
+
+E:\PCOMMBundler\BUILD_PCOMMbundler_VS2010.bat
+    Builds the PCOMMBundler.exe and PCOMMBundler.pdb using msbuild.
+
+E:\prod_int\common\pcsfm\build_pcsfm_VS2010.bat
+    Calls the msbuild command.
+
+E:\prod_int\pcertmig\pcertmig.bat
+    Builds the pcertmig.exe using nmake and mt.
+
+E:\snaps\probdet\nbamall.bat
+    Calls its child script in a loop.
+
+E:\snaps\probdet\nbamappn.bat
+    Builds the nbamappn.dll for each language.
+
+E:\snaps\tools\perfmon\ntmill\perfmrge.bat
+    Renames perfm<language>.ini to perfm<language>.in_ file.
+
+E:\snaps\jobs\ntmill\rebuildp.cmd
+    Calls two batch files and many nmake commands on makefiles.
+
+E:\snaps\jobs\ntmill\makenbas.cmd
+    Runs two nmake commands for two separate env (current NT settings and NT2000).
+
+E:\snaps\jobs\ntmill\makellc2.cmd
+    Runs two nmake commands for two separate env (current NT settings and NT2000).
+
+E:\snaps\jobs\winmill\rebuildp.bat
+    Calls many nmake commands on makefiles.
+
+E:\prod_int\chkdcl.bat
+    Runs dumpbin command on DLL, VXD and SYS files and checks for the string "error".
+
+E:\prod_int\config\api\cfgapi.bat
+    Builds the pcscapi.dll using nmake.
+
+E:\prod_int\config\nodeinit\spelling.bat
+    Runs nmake commands to build SPELLING (DLL or LIB ?).
+
+E:\prod_int\config\api\fmtcapi.bat
+    Builds the fmtcapi.dll using nmake.
+
+E:\prod_int\ras\message\fmtmsg\fmtmsg.bat
+    Builds the fmtmsg.dll using nmake.
+
+E:\prod_int\config\pcscfg\pcscfg.bat
+    Calls itself in a loop for all languages.
+    Builds the pcscfg.exe file with nmake and mt commands.
+
+E:\prod_int\config\pcscfg\emutocfg\emutocfg.bat
+    Builds emutocfg.dll using nmake.
+
+E:\prod_int\config\pcscfg\cfgmsg\cfgmsg.bat
+    Builds the cfgmsg.dll using nmake.
+
+E:\prod_int\config\pcscfg\pccfgmri\pccfgmri.bat
+    Builds the pccfg%pccfgmri_lang%.dll file using nmake.
+
+E:\prod_int\config\ldlc\ldlc.bat
+    Builds the ldlc.dll using nmake.
+
+E:\prod_int\config\ldlc\ldlchlp.bat
+    Does nothing (goto END at top).
+
+E:\prod_int\config\ldlc\ldlcmri\ldlcmri.bat
+    Calls its child script after setting pi_lang env var.
+
+E:\prod_int\config\ldlc\ldlcmri\ldlcmri2.bat
+    Builds the ldlc%pi_lang%.dll using nmake.
+
+E:\prod_int\config\verify\vacgverf\vacgverf.bat
+    Builds the vacgverf.dll using nmake.
+
+E:\prod_int\config\verify\vacgcon\vacgcon.bat
+    Builds VACGCON.EXE using nmake and mt.
+
+E:\prod_int\config\verify\vacgwin\vacgwin.bat
+    Calls its child script in a loop for all languages.
+    Builds vacgwin.exe using nmake and mt.
+
+E:\prod_int\config\verify\vacgfmri\vacgfmri.bat
+    Builds the vacgf%pi_lang%.dll file using nmake.
+
+E:\prod_int\config\nodeinit\nodeinit.bat
+    Builds the NI_MSG.DLL for each language.
+    Performs build on NODEINIT.MAK using nmake. Also uses mt command.
+
+E:\prod_int\config\migrate\ocdmigr.bat
+    Builds the ocdmigr.dll file using nmake.
+
+E:\prod_int\config\migrate\pcsmig\pcsmig.bat
+    Calls its child script pcmigmri.bat in a loop for all languages.
+    Builds the pcsmig.exe using nmake and mt.
+
+E:\prod_int\config\migrate\pcsmig\pcmigmri\pcmigmri.bat
+    Builds the pcmig%pi_lang%.dll using nmake.
+
+E:\prod_int\config\pcsndc\pcsndc.bat
+    Calls its child script pcndcmri.bat in a loop for all languages.
+    Builds pcsndc.exe using nmake and mt.
+
+E:\prod_int\config\pcsndc\pcndcmri\pcndcmri.bat
+    Builds the pcndc%pi_lang%.dll file for the language passed as argument using nmake.
+
+E:\prod_int\tn62\bld_tn62.bat
+    Runs nmake on three files - tn62inst.mak, tn62unis.mak and tn62api to generate the files TN62INST.EXE, TN62UNIS.EXE, TN62API.DLL and TN62API.LIB.
+
+E:\prod_int\config\nodeinit\anyinit\anyinit.bat
+    Builds the ANYINIT.dll file using nmake.
+
+E:\anynet\msg\anymsg.bat
+    Uses nmake command to build anymsg.dll. Also builds anymsg.hlp. This is done for all languages.
+
+E:\pcsftp\pcsFTP.bat
+    Calls the msbuild command for Ibm.Rational.Hacp.Net.PcsFtpClient.csproj to build pcsFTP.exe and other DLLs.
+
+E:\pcsnp\pcsnp.bat
+    Uses the cl command to build pcsnp.exe and pcsnp.dll files.
+
+E:\pcsnp\x64\pcsnp64.bat
+    Builds the pcsnp64.dll file using cl command.
+
+E:\pcste\pcste.bat
+    Calls the msbuild command on pcste.csproj to build pcste.exe file.
+
+E:\prod_int\config\pcscfg\cfgwiz\cfgwiz.bat
+    Calls in a loop its child script pcwizmri.bat after setting pi_lang env var.
+    Builds cfgwiz.exe using nmake and mt commands.
+
+E:\prod_int\config\pcscfg\cfgwiz\pcwizmri\pcwizmri.bat
+    Builds the pcwiz%pi_lang%.dll using nmake.
+
+E:\prod_int\ras\nodeops\nodeops.bat
+    Calls in a loop its child script pcnopmri.bat after setting pi_lang env var.
+    Builds nodeops.exe, fmtnops.dll and pcsnops.exe using two nmake and one mt command.
+
+E:\prod_int\ras\nodeops\pcnopmri\pcnopmri.bat
+    Builds the pcnop%pi_lang%.dll file using nmake.
+
+E:\prod_int\ras\nodeops\cmdline\cmdline.bat
+    
+
+E:\prod_int\ras\nodeops\cmdline\csstart.bat
+    Builds csstart.exe using nmake and mt commands.
+
+E:\prod_int\ras\nodeops\cmdline\csquery.bat
+    Builds csquery.exe using nmake and mt commands.
+
+E:\prod_int\ras\nodeops\cmdline\csstop.bat
+    Builds csstop.exe using nmake and mt commands.
+
+E:\prod_int\ras\nodeops\nopapi\nopapi.bat
+    Builds nopapi.dll using nmake.
+
+E:\prod_int\ras\nodeops\cmdline\csdspy.bat
+    Builds csdspy.exe using nmake and mt commands.
+
+E:\prod_int\ras\nodeops\cmdline\csmodify.bat
+    Builds csmodify.exe using nmake and mt commands.
+
+E:\prod_int\ras\nodeops\cmdline\cmdlnres\cmdlnres.bat
+    Builds three DLLs using three nmake commands for each language.
+
+E:\prod_int\csrcmds\ropmsg.bat
+    Builds the ropmsg.dll using nmake.
+
+E:\prod_int\csrcmds\csrcmds.bat
+    Builds csrcmds.exe, rcmdsa.exe and rcmdfmtr.dll using three nmake commands.
+
+E:\prod_int\apps\winaping\winaping.bat
+    Builds winaping.exe using nmake and mt commands.
+
+E:\prod_int\apps\pcsmcnv\pcsmcnv.bat
+    Builds pcsmcnv.exe using nmake.
+
+E:\prod_int\apps\getsense\getsense.bat
+    Builds getsense.exe using nmake and mt.
+
+E:\prod_int\install\instutil\instutil.bat
+    ? (does not exist)
+
+E:\prod_int\install\llc2k\llc2k.bat
+    Runs two nmake commands on adaptinst.mak and one mt command.
+
+E:\prod_int\install\pcsinres\pcsinres.bat
+    ? (does not exist)
+
+E:\prod_int\install\install\bldinst.bat
+    ? (does not exist)
+
+E:\prod_int\install\trace\itfinst.bat
+    ? (does not exist)
+
+E:\prod_int\instmgr\buildpcom.bat
+    Runs natice2ascii on many .properties files and then runs two jar commands.
+
+E:\prod_int\db2instmgr\builddb2.bat
+    ? (does not exist)
+
+E:\prod_int\sli\makesli.bat
+    Calls in a loop its child script slimsg.bat after setting pi_lang env var.
+    Builds winsli32.dll using nmake.
+
+E:\prod_int\sli\slimsg.bat
+    Builds SLIMSG.HLP. Also SLIMSG.DLL using nmake for each language.
+
+E:\tools\build\mgxlink.cmd
+    <to check later>
+
+E:\prod_int\pcsmc2vb\pcsmc2vb.bat
+    Builds pcsmc2vb.dll using two nmake and mt commands.
+
+E:\BUILD\autsystem\autsystem.bat
+    Builds autSystem.dll using nmake.
+
+E:\prod_int\asciicfg\asciicfg.bat
+    Builds ocdconvt.dll using nmake.
+
+E:\prod_int\passthru\passthru.bat
+    Builds the passthru API dlls using nmake commands.
+
+E:\prod_int\userpm\userpm.bat
+    Builds the userpm.exe and userpmd.dll files using nmake and mt.
+
+E:\prod_int\pcsdtect\pcsdtect.bat
+    Builds pcsdtect.exe using nmake and mt commands.
+
+E:\prod_int\config\csunsapi\csunsapi.bat
+    Builds csunsapi.dll using nmake.
+
+E:\prod_int\config\amdsec\amdsec.bat
+    Builds amdsec.exe using nmake and mt commands.
+
+E:\prod_int\config\amdfmt\amdfmt.bat
+    Builds amdfmt.exe is using nmake and mt.
+
+E:\pdlc\msg\msg.bat
+    Calls itself in a loop with a language as argument for all languages.
+    Calls the mgxcomp command for enu, and mgxlink for all languages including enu.
+    Builds the pdlcsmsg.dll for a language in an iteration.
+
+E:\prod_int\env\adu\adu.bat
+    Calls its child script pcadumri.bat in a loop for each language.
+
+E:\prod_int\env\adu\pcadumri\pcadumri.bat
+    Builds pcadu%pi_lang%.dll file using nmake.
+
+E:\prod_int\env\adu\adumsg\adumsg.bat
+    Builds adumsg.dll using nmake.
+
+E:\prod_int\env\adu\pcsadux\pcsadux.bat
+    Builds pcsadux.dll for win95 and winnt using nmake.
+
+E:\prod_int\chkpdlc.bat
+    Runs dumpbin command on .dll, .hlp, .inf, .sys, .vxd, .com and .exe files and logs the string "error".
+
+E:\prod_int\ckpi.bat
+    Runs dumpbin command on .dll, .exe, .nsp, .wsp, .sys, .inf and .hlp files and logs the string "error".
+
+E:\prod_int\common\pcsupdinst\pcsupdinst.bat
+    Builds pcsupdinst.exe file using cl command.
+
+D:\tools\ERRS.BAT
+    Searches for strings like "with error", "error" and "corrupted" in .log files.
+
+D:\tools\pierrs.bat
+    Searches for strings like "error ", " warning: topic " and "Error:" in .log files.
+
+E:\cmds\pkg_drv.rex
+    Calls its child script pkg60drv.bat in a loop for each "kor chs cht mls".
+    Also has patch creation steps, but those are commented.
+
+E:\prod_int\pkg60drv.bat
+    Calls its child script grabret.bat for a particular language, e.g. kor.
+    Calls the InstallShield standalone builder using nmake on E:\prod_int\install\iswi\install.mak. 
+
+E:\prod_int\grabret.bat
+    Copies symbol files for different languages from DBCS_Dumps to e:\build\symbols_<language> folder.
+    Copies more files to %emul_temp_dir% directory e.g. E:\pkg_kor\emultemp.
+    pkzip25 command is used to extract files to the emultemp folder.
+
+E:\cmds\mk_dvd.bat
+    Copies files to folders like E:\m1224DVD for staging DVD files.
+
+E:\cmds\package.xml
+    Creates zips of files that are to be distributed using ant zip tasks.
+
+E:\cmds\CreateMPcommCNF.bat
+    Creates the MPComm.cnf file with details (e.g. file name, size, checksum, etc.) about the build files.
+
+E:\cmds\sync2local.rex
+    Pushes built files and source code to the file server (targetPath = "\\10.115.90.16\KEPI-Storage2\PCOMM_NEW\";).
+    Log file is E:\cmds\winmill_local.log.
+
+E:\cmds\sync2local_pluton.bat
+    Copies some files to the pluton (source code) folder in file server \\10.115.90.16.
