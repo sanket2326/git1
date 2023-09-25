@@ -1,211 +1,253 @@
-C:\tools\Startrex.bat
-  c:\tools\pcom_bld.rex
-    e:\cmds\CopyWorkArea.bat
-    e:\cmds\bld_st.cmd
-      e:\cmds\dropfunc.rex (does not exist)
-      e:\cmds\newbld.bat
-      e:\cmds\set_env.cmd
-      E:\buildbat\build.bat
-        E:\buildbat\startbld.bat
-          E:\buildbat\blenvset.bat
-          E:\buildbat\blcpyset.bat
-          E:\buildbat\runbuild.bat (type 1)
-            E:\BUILD\pcsver\gendtH.rex
-            E:\BUILD\cmmouse\cmmouse.bat
-            E:\buildbat\makecmp.bat (multiple times)
-            E:\BUILD\skit\skit.bat
-              E:\BUILD\skit\ikmhelp\ikmhelp.bat
-            E:\BUILD\pcsdb\pcsdbout.bat
-            E:\BUILD\pcsdb\pcsdb.bat
-            E:\BUILD\pcshbw32\pcshbw32.bat
-              E:\BUILD\pcshbw32\pcsdehli.bat
-            E:\buildbat\blenv16.bat
-            E:\buildbat\make16.bat (multiple times)
-          E:\buildbat\runbuild.bat (type 2)
-            E:\buildbat\makenreg.bat (multiple times)
-      E:\cmds\CK_EMUL.cmd
-      E:\buildbat\release.bat
-      E:\cmds\bld_jpn.rex
-        E:\buildbat\runbuild.bat (type 2)
-      E:\prod_int\build_pi.bat
-        E:\prod_int\common\ActiveX\PCOMMSession\BuildActiveX.bat
-        E:\prod_int\config\nodeinit\showver.bat
-        E:\prod_int\ras\message\vdibmlog.bat
-        E:\prod_int\config\nodeinit\millutil.bat
-        E:\prod_int\config\nodeinit\strtwt.bat
-        E:\prod_int\ras\trace\builditf.bat
-          E:\prod_int\ras\trace\nstrc\nstrc.bat
-          E:\prod_int\ras\trace\nstrcnt\nstrcnt.bat
-          E:\prod_int\ras\trace\trcboot\trcboot.bat
-          E:\prod_int\ras\trace\fmt_util\fmt_util.bat
-          E:\prod_int\ras\trace\fmteng\fmteng.bat
-          E:\prod_int\ras\trace\pcsfmtpi\pcsfmtpi.bat
-          E:\prod_int\ras\trace\trcmsg\trcmsg.bat
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\ras\trace\trcgui\pctrcmri\pctrcmri.bat
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\ras\trace\trcgui\trcgui.bat
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\ras\trace\cstrace\cstrace.bat
-            E:\prod_int\ras\trace\cstrace\cstrcmri\cstrcmri.bat (in loop)
-          E:\prod_int\ras\trace\cstrace\cstrcsrv\cstrcsrv.bat
-          E:\prod_int\ras\trace\snaformat\snaformat.bat
-        E:\prod_int\common\pcsmls\pcsmls.bat
-        E:\prod_int\ras\message\klognt\klognt.bat
-        E:\prod_int\ras\message\msgio\msgio.bat
-        E:\prod_int\common\pcsw32x\pcsw32x.bat
-        E:\prod_int\ras\message\message.bat
-          E:\prod_int\ras\message\msgmsg\msgmsg.bat (in loop)
-            E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\pcssh\pcssh.bat
-          E:\prod_int\pcssh\pcsshmsg\pcsshmsg.bat (in loop)
-        E:\prod_int\cpic\makecpic.bat
-          E:\prod_int\cpic\cpicmsg.bat
-        E:\prod_int\cpic\mwincpic.bat
-        E:\prod_int\pcsgrvt\makegrvt.bat
-        E:\prod_int\common\pcsmfcx\pcsmfcx.bat
-          E:\prod_int\common\pcsmfcx\help\mfcxhelp.bat
-          E:\prod_int\common\pcsmfcx\pcmfcmri\pcmfcmri.bat (in loop)
-        E:\prod_int\ras\service\bundler\pcspdmri\pcspdmri.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\ras\service\bundler\bundler.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\ras\service\iserv\iservmri\iservmri.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\ras\service\iserv\iserv.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\ras\service\pcsapar\pcsapar.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\ras\service\pcsapard\pcsapard.bat
-          E:\prod_int\ras\service\pcsapard\sendpcsaparmessage\sendpcsaparmessage.bat
-        E:\prod_int\pcomstr\pcomstr.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\pcomstrt\pcomstrt.bat
-        E:\prod_int\pcomstop\pcomstop.bat
-        E:\prod_int\pcomqry\pcomqry.bat
-        E:\prod_int\ras\message\msgbrwsr\msgbrwsr.bat
-          E:\prod_int\ras\message\msgbrwsr\pclvwmri\pclvwmri.bat (in loop)
-          E:\prod_int\tools\setrcopt.bat
-        E:\BUILD\pcsdbhlp\pcsdbhlp.bat
-        E:\BUILD\pcsdbhlp\pcsodbc.bat (does not exist)
-        E:\BUILD\pcsdb\pcsdbmri.bat
-        E:\prod_int\common\pcswssts\pcswssts.bat
-        E:\prod_int\common\pcswdlgc\pcswdlgc.bat
-        E:\prod_int\common\pcsdlg1\pcsdlg1.bat
-        E:\BUILD\pcscdra\pcscdra.bat
-        E:\PCOMMBundler\BUILD_PCOMMbundler_VS2010.bat
-        E:\prod_int\common\pcsfm\build_pcsfm_VS2010.bat
-        E:\prod_int\pcertmig\pcertmig.bat
-        E:\snaps\probdet\nbamall.bat
-          E:\snaps\probdet\nbamappn.bat (in loop)
-        E:\snaps\tools\perfmon\ntmill\perfmrge.bat
-        E:\snaps\jobs\ntmill\rebuildp.cmd
-          E:\prod_int\tools\setrcopt.bat
-          E:\snaps\jobs\ntmill\makenbas.cmd
-          E:\snaps\jobs\ntmill\makellc2.cmd
-        E:\snaps\jobs\winmill\rebuildp.bat
-        E:\prod_int\chkdcl.bat
-        E:\prod_int\config\api\cfgapi.bat
-        E:\prod_int\config\nodeinit\spelling.bat
-        E:\prod_int\config\api\fmtcapi.bat
-        E:\prod_int\ras\message\fmtmsg\fmtmsg.bat
-        E:\prod_int\config\pcscfg\pcscfg.bat
-          E:\prod_int\config\pcscfg\emutocfg\emutocfg.bat
-          E:\prod_int\config\pcscfg\cfgmsg\cfgmsg.bat
-          E:\prod_int\config\pcscfg\pccfgmri\pccfgmri.bat
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\config\ldlc\ldlc.bat
-        E:\prod_int\config\ldlc\ldlchlp.bat
-        E:\prod_int\config\ldlc\ldlcmri\ldlcmri.bat
-          E:\prod_int\config\ldlc\ldlcmri\ldlcmri2.bat (in loop)
-            E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\config\verify\vacgverf\vacgverf.bat
-        E:\prod_int\config\verify\vacgcon\vacgcon.bat
-        E:\prod_int\config\verify\vacgwin\vacgwin.bat
-          E:\prod_int\config\verify\vacgfmri\vacgfmri.bat (in loop)
-            E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\config\nodeinit\nodeinit.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\config\migrate\ocdmigr.bat
-        E:\prod_int\config\migrate\pcsmig\pcsmig.bat
-          E:\prod_int\config\migrate\pcsmig\pcmigmri\pcmigmri.bat
-            E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\config\pcsndc\pcsndc.bat
-          E:\prod_int\config\pcsndc\pcndcmri\pcndcmri.bat
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\tn62\bld_tn62.bat
-        E:\prod_int\config\nodeinit\anyinit\anyinit.bat
-        E:\anynet\msg\anymsg.bat
-        E:\pcsftp\pcsFTP.bat
-        E:\pcsnp\pcsnp.bat
-        E:\pcsnp\x64\pcsnp64.bat
-        E:\pcste\pcste.bat
-        E:\prod_int\config\pcscfg\cfgwiz\cfgwiz.bat
-          E:\prod_int\config\pcscfg\cfgwiz\pcwizmri\pcwizmri.bat
-            E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\ras\nodeops\nodeops.bat
-          E:\prod_int\ras\nodeops\pcnopmri\pcnopmri.bat (in loop)
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\ras\nodeops\cmdline\cmdline.bat
-          E:\prod_int\ras\nodeops\cmdline\csstart.bat
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\ras\nodeops\cmdline\csquery.bat
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\ras\nodeops\cmdline\csstop.bat
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\ras\nodeops\nopapi\nopapi.bat
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\ras\nodeops\cmdline\csdspy.bat
-          E:\prod_int\ras\nodeops\cmdline\csmodify.bat
-          E:\prod_int\ras\nodeops\cmdline\cmdlnres\cmdlnres.bat (in loop)
-            E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\csrcmds\ropmsg.bat
-        E:\prod_int\csrcmds\csrcmds.bat
-        E:\prod_int\apps\winaping\winaping.bat
-        E:\prod_int\apps\pcsmcnv\pcsmcnv.bat
-        E:\prod_int\apps\getsense\getsense.bat
-        E:\prod_int\install\instutil\instutil.bat (does not exist)
-        E:\prod_int\install\llc2k\llc2k.bat
-        E:\prod_int\install\pcsinres\pcsinres.bat (does not exist)
-        E:\prod_int\install\install\bldinst.bat (does not exist)
-        E:\prod_int\install\trace\itfinst.bat (does not exist)
-        E:\prod_int\instmgr\buildpcom.bat
-        E:\prod_int\db2instmgr\builddb2.bat (does not exist)
-        E:\prod_int\sli\makesli.bat
-          E:\prod_int\sli\slimsg.bat
-            E:\tools\build\mgxlink.cmd
-        E:\prod_int\pcsmc2vb\pcsmc2vb.bat
-        E:\BUILD\autsystem\autsystem.bat
-        E:\prod_int\asciicfg\asciicfg.bat
-        E:\prod_int\passthru\passthru.bat
-        E:\prod_int\userpm\userpm.bat
-        E:\prod_int\pcsdtect\pcsdtect.bat
-        E:\prod_int\config\csunsapi\csunsapi.bat
-        E:\prod_int\config\amdsec\amdsec.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\config\amdfmt\amdfmt.bat
-          E:\prod_int\tools\setrcopt.bat
-        E:\pdlc\msg\msg.bat
-        E:\prod_int\env\adu\adu.bat
-          E:\prod_int\env\adu\pcadumri\pcadumri.bat (in loop)
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\env\adu\adumsg\adumsg.bat (in loop)
-            E:\prod_int\tools\setrcopt.bat
-          E:\prod_int\env\adu\pcsadux\pcsadux.bat (in loop)
-            E:\prod_int\tools\setrcopt.bat
-        E:\prod_int\chkpdlc.bat
-        E:\prod_int\ckpi.bat
-        E:\prod_int\common\pcsupdinst\pcsupdinst.bat
-      D:\tools\ERRS.BAT
-      D:\tools\pierrs.bat
-      E:\cmds\pkg_drv.rex
-        E:\prod_int\pkg60drv.bat (in loop)
-          E:\prod_int\grabret.bat
-        E:\cmds\mk_dvd.bat
-        E:\cmds\package.xml
-        E:\cmds\CreateMPcommCNF.bat
-        E:\cmds\sync2local.rex
-          E:\cmds\sync2local_pluton.bat
+GABUILD VERIFICATION TOOL 
+
+ 
+
+About Tool:  GABUILD Verification Tool is internal tool that will help us to verify if any deliverables files are missing our unpackaged wrongly in the new Version of PCOMM. 
+
+                           Also, instead of doing the build verification manually, User can run this tool to generate the reports which will indicate whether the DLL or EXE file is packaged correctly  
+
+                           along with the Version information. 
+
+Features:  
+
+Network Location: PCOMM build can be copied from network location 
+
+Command Line arguments: User can also run this tool using the Command line by providing the required parameter. 
+
+Batch Execution: User can run this tool using the .Bat file where multiple Version of PCOMM build can be verified in single execution 
+
+Build Comparison: Two and more PCOMM build can be verified by specifying the path of PCOMM Build 
+
+CSV FILE Report: This tool will create the report indicating the status of each DLL and .EXE file in CSV file 
+
+Validity Check: Report will highlight whether any DLL or .exe is missing or packaged wrongly at different Location, if everything is fine it will show “PASS” or “FAIL.” 
+
+ 
+
+HOW TO RUN THE TOOL 
+
+ 
+
+The tool can be run using the .bat file where multiple Version of PCOMM build can be verified in single execution, however user needs to provide the specific parameter. 
+
+Below is the syntax of command with parameter to run the tool. 
+
+ 
+
+Case 1: Use the tool to create the Template file for PCOMM build 
+
+Syntax: [Path of tool] [Path of PCOMM build] [Version] [NULL] [Path of Report file] 
+
+Example: GABuildVerificationTool.exe “D:\Testing\pcommv14.0.0\mmls0507\mls” 14000  "  "  "D:\Testing\pcommv14.0.0\1400.csv" 
+
+Note:  
+
+[Path of PCOMM build]: Always Provide the path of PCOMM build till “mls\cht\chs\kor” folder (For example: “pcommv14.0.0\mmls0507\mls") 
+
+[Version]:  Version of PCOMM Build (For example: 14000, 14020, 13030, 12050 ,12060) 
+
+[NULL]: While Creating the Template file, keep this as NULL. 
+
+[Path of Report file]: Provide the path of template.CSV file (For example: "D:\Testing\140200.csv"). This parameter is optional. If no path is specified, then default path [Path of PCOMM build] will be taken. 
+
+ 
+
+Screenshot: Below command is used to create the Template file for specific PCOMM build (Example PCOMM 14000), However user can provide the path location of their own choice. 
+
+ 
+
+After executing the above command console will display the below output.Output: 
+
+  
+
+  
+
+Here console Displayed as “Failed “which is expected while creating the Template file because it is the original file which will be used to compared with other build of PCOMM. 
+
+Output will show the number for DLL/EXE file which matched the specified Version. 
+
+Match count =499 Means, there are total 499 DLL/EXE file which matched the version 14000.  
+
+Unmatched Count= 159 indicates the number of DLL/EXE other than 14000 version.  
+
+Note: The Template.CSV file will be created at the specified Location [Path of Report file].  
+
+(In Above image the Template file is "D:\Testing\pcommv14.0.0\1400.csv) 
+
+ 
+
+Below is the screenshot of Template.CSV(1400.csv) file generated. 
+
+ 
+
+First column is EXE/DLL file name present under the GA build. 
+
+Second column is Build Version which indicated the version of the file 
+
+Third column is Build Date which indicates the Last Modified date of the file. 
+
+Fourth column is Path of corresponding DLL/EXE file under the GA BUILD. 
+
+Fifth column is Verification which is “Not compared” since this is the Template file. 
+
+ 
+
+Case 2: Use the tool to create the Report after the GA BUILD Comparison 
+
+Syntax: [Path of tool] [Path of PCOMM build] [Version] [Path of Template file] [Path of Report file]  
+
+Example: GABuildVerificationTool.exe  "D:\Testing\pcommv14.0.1\mmls1115\mls"  14010   "D:\Testing\pcommv14.0.0\1400.csv"   "D:\Testing\1401.csv" 
+
+Note:  
+
+[Path of PCOMM build]: Always Provide the path of PCOMM build till “mls\cht\chs\kor” folder (For example: “pcommv14.0.2\mmls0820\mls") 
+
+[Version]:  Version of PCOMM Build (For example: 14000, 14020, 13030, 12050 ,12060) 
+
+[Path of Template file]: Path of Template .CSV file created in Case 1([Path of Report file]) 
+
+[Path of Report file]: Provide the path of template.CSV file (For example: "D:\Testing\140200.csv"). This parameter is optional. If no path is specified, then default path [Path of PCOMM build] will be taken. 
+
+Screenshot: Below command is used to create the Template file for specific PCOMM build (Example PCOMM 14000), However user can provide the path location of their own choice. 
+
+ 
+
+After executing the above command console will display the below output. 
+
+Output: 
+
+ 
+
+Here console Displayed “PASS “which indicates that Each DLL/file of the PCOMM build matches the Template file. It means that no DLL/EXE file is missing from the build. 
+
+Note: If any of the file does not matched or any file is missing it will show the status as “FAILED” 
+
+Output will show the number for DLL/EXE file which matched the specified Version. 
+
+Match count =499 Means, there are total 499 DLL/EXE file which matched the version 14000.  
+
+Unmatched Count= 159 indicates the number of DLL/EXE other than 14000 version.  
+
+Note: The Report file of the comparison will be created at the specified Location [Path of Report file].  
+
+(In Above image the report file is "D:\Testing\pcommv14.0.1\14010.csv) 
+
+ 
+
+Below is the screenshot of Report.CSV(14010.csv) file generated. 
+
+ 
+
+Note:  
+
+First column is EXE/DLL file name present under the GA build. 
+
+Second column is Build Version which indicated the version of the file 
+
+Third column is Build Date which indicates the Last Modified date of the file. 
+
+Fourth column is Path of corresponding DLL/EXE file under the GA BUILD. 
+
+Fifth column is Verification which is “PASS/FAILED”. It shows pass if the corresponding DLL/EXE file matched otherwise it will shows as failed. 
+
+ 
+
+BATCH FILE EXECUTION:  
+
+User can run this tool using the .Bat file where multiple Version of PCOMM build can be verified in single execution 
+
+Batch Script: 
+
+Graphical user interface, application
+
+Description automatically generated 
+
+Edit the Below Parameter in the Batch File as per the Requirement 
+
+TempSource: Path of PCOMM build which will be used as a template (It can be network path also) 
+
+TemplateVersion: Version of the PCOMM build 
+
+TempDestination: Local Path of PCOM build (Template Build) 
+
+TempalateCSVPath: Path where the log file for Template build is Generated. 
+
+Language: Language pack for PCOMM build (Example: mls, cht,chs,kor) 
+
+ 
+
+ReportSource: Path of actual PCOMM build which will be used to compare with Template build (It can be network path also) 
+
+ReportVersion: Version of Actual PCOMM build 
+
+ReportDestination: Local path for Actual PCOMM build 
+
+ReportCSVPath: Path where the log file for Actual PCOMM build is Generated. 
+
+ 
+
+Note:   
+
+TempSource, ReportSource, Always Provide the Path of PCOMM build till unzipped mmls/cht/chs/kor folder. 
+
+Always keep the GABuildVerificationTool.exe file and GABuildVerificationTool.bat in same folder. 
+
+ 
+
+Running the GABuildVerificationTool.bat: 
+
+ 
+
+      To Run tool using the batch file, follow the below steps. 
+
+Go to the location where GABuildVerificationTool.bat and GABuildVerificationTool.exe file is present.  
+
+Edit the GABuildVerificationTool.bat file and provide the required parameter  
+
+Launch the command prompt from the same location and run GABuildVerificationTool.bat 
+
+ 
+
+Below Screenshot indicates how to run the tool using Batch file. 
+
+Text
+
+Description automatically generated 
+
+ 
+
+After executing the above command console will display the below output. 
+
+Output: 
+
+  
+
+A screenshot of a computer
+
+Description automatically generated with medium confidence 
+
+ 
+
+The command window will display the final output whether the Build comparison is Pass or Fail. 
+
+Also, in case of pass and failure, we can compare the below excel file generated for Template build as well as PCOMM build. 
+
+For example: 
+
+TempalateCSVPath =   "D:\Testing\13020.csv"(Path as per given in batch file) 
+
+ReportCSVPath =         "D:\Testing\13030.csv"(Path as per given in batch file) 
+
+ 
+
+We can compare the above excel file to get more information about the pass or failure status of the PCOMM build. 
+
+ 
+
+LIMITATION:  
+
+MSI File Verification: The tool is not applicable to verify the .msi file 
+
+Unzipped PCOMM build from network Location 
+
+ 
